@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-tr from-violet-400 to-violet-700 relative h-screen w-screen">
+    <div className="bg-gradient-to-tr from-violet-400 to-violet-700 relative h-screen w-screen overflow-x-hidden">
       <img
         className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
         alt="main background image"
@@ -35,7 +35,7 @@ export default function Home() {
       </nav>
       <div className="absolute inset-0 flex flex-col justify-center items-center max-w-xl mx-auto text-center">
         <Atropos className="my-atropos" shadowScale={0.1} highlight={false}>
-          <div className="space-y-8 atropos-scale">
+          <div className="space-y-8">
             <h1
               className="font-primary font-extrabold text-violet-100 text-3xl sm:text-4xl md:text-5xl md:leading-tight"
               data-atropos-offset="5">
@@ -46,12 +46,14 @@ export default function Home() {
               data-atropos-offset="-5">
               Free and Open Source AI Image Upscaler
             </h3>
-            <img
-              src="/screenshot.png"
-              alt="Upscayl Screenshot"
-              className="rounded-xl w-full"
-              data-atropos-offset="0"
-            />
+            <div className="px-5 sm:px-0">
+              <img
+                src="/screenshot.png"
+                alt="Upscayl Screenshot"
+                className="rounded-xl"
+                data-atropos-offset="0"
+              />
+            </div>
             <div className="flex flex-col">
               <p
                 className="text-violet-100 font-bold md:text-lg lg:text-xl"
@@ -65,7 +67,7 @@ export default function Home() {
                   href="https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.dmg"
                   target="_blank"
                   rel="noreferrer">
-                  <button className="p-3 bg-orange-300 rounded-full font-medium hover:scale-110 transition-all">
+                  <button className="p-3 bg-orange-300 rounded-full font-medium hover:scale-110 transition-all text-sm sm:text-base">
                     MacOS 🍎
                   </button>
                 </a>
@@ -73,7 +75,7 @@ export default function Home() {
                   href="https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage"
                   target="_blank"
                   rel="noreferrer">
-                  <button className="p-3 bg-green-300 rounded-full font-medium hover:scale-125 transition-all">
+                  <button className="p-3 bg-green-300 rounded-full font-medium hover:scale-125 transition-all text-sm sm:text-base">
                     Linux🐧
                   </button>
                 </a>
@@ -81,7 +83,7 @@ export default function Home() {
                   href="https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-Setup-1.5.5.exe"
                   target="_blank"
                   rel="noreferrer">
-                  <button className="p-3 bg-blue-300 rounded-full font-medium hover:scale-110 transition-all">
+                  <button className="p-3 bg-blue-300 rounded-full font-medium hover:scale-110 transition-all text-sm sm:text-base">
                     Windows 🐌
                   </button>
                 </a>
@@ -89,6 +91,19 @@ export default function Home() {
             </div>
           </div>
         </Atropos>
+
+        <footer className="fixed bottom-1 text-violet-200/50">
+          Made by{" "}
+          <a href="https://github.com/TGS963/" className="font-semibold">
+            TGS963
+          </a>{" "}
+          and{" "}
+          <a href="https://github.com/NayamAmarshe/" className="font-semibold">
+            Nayam Amarshe
+          </a>
+          <br />
+          with ⌨ 🖱
+        </footer>
       </div>
     </div>
   );
