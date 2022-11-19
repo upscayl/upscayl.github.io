@@ -12,7 +12,7 @@ export default function Home() {
         src="https://source.unsplash.com/random"
       />
 
-      <nav className="fixed top-0 w-screen p-5 flex flex-row items-center gap-16">
+      <nav className="fixed z-50 top-0 w-screen p-5 flex flex-row items-center gap-16">
         <div className="flex flex-row items-center gap-2">
           <img src="logo.png" alt="Upscayl Logo" className="w-8" />
           <h1 className="text-violet-100 font-extrabold text-lg">Upscayl</h1>
