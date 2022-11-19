@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: "/upscayl.github.io",
-  assetPrefix: "/upscayl.github.io",
+  basePath: "/",
+  assetPrefix: "/",
 };
 
 module.exports = nextConfig;
