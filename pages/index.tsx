@@ -6,11 +6,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-gradient-to-tr from-violet-400 to-violet-700 relative h-screen w-screen overflow-x-hidden">
-      <img
+      <object
         className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
-        alt="main background image"
-        src="https://source.unsplash.com/random"
-      />
+        data="https://source.unsplash.com/random"
+        type="image/jpg">
+        <img
+          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
+          src="fallback.jpeg"
+        />
+      </object>
 
       <nav className="fixed z-50 top-0 w-screen p-5 flex flex-row items-center gap-16">
         <div className="flex flex-row items-center gap-2">
