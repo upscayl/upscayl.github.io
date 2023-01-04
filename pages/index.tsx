@@ -75,7 +75,7 @@ export default function Home() {
                 className="flex flex-row gap-5 items-center justify-center p-5"
                 data-atropos-offset="10">
                 <a
-                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.0/upscayl-2.0.0-mac.dmg"
+                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.1/upscayl-2.0.1-mac.dmg"
                   target="_blank"
                   rel="noreferrer">
                   <button className="p-3 bg-orange-300 rounded-full font-medium hover:scale-110 transition-all text-sm sm:text-base">
@@ -83,7 +83,7 @@ export default function Home() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.0/upscayl-2.0.0-linux.AppImage"
+                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.1/upscayl-2.0.1-linux.AppImage"
                   target="_blank"
                   rel="noreferrer">
                   <button className="p-3 bg-green-300 rounded-full font-medium hover:scale-125 transition-all text-sm sm:text-base">
@@ -91,7 +91,7 @@ export default function Home() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.0/upscayl-2.0.0-win.exe"
+                  href="https://github.com/upscayl/upscayl/releases/download/v2.0.1/upscayl-2.0.1-win.exe"
                   target="_blank"
                   rel="noreferrer">
                   <button className="p-3 bg-blue-300 rounded-full font-medium hover:scale-110 transition-all text-sm sm:text-base">
