@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-gradient-to-tr from-violet-400 to-violet-700 relative h-screen w-screen overflow-x-hidden">
       <object
         className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
-        data="https://source.unsplash.com/random"
+        data="https://source.unsplash.com/random/?abstract,nature"
         type="image/jpg">
         <img
           className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50"
