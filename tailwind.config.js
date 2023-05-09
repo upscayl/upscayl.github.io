@@ -20,7 +20,7 @@ module.exports = {
       keyframes: {
         "zoom-in-out": {
           "0%": { transform: "scale(100%)" },
-          "50%": { transform: "scale(105%)" },
+          "50%": { transform: "scale(110%)" },
           "100%": { transform: "scale(100%)" },
         },
       },
