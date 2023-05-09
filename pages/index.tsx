@@ -70,7 +70,7 @@ export default function Home() {
               <img
                 src="/screenshot.png"
                 alt="Upscayl Screenshot"
-                className="rounded-2  xl inline-block"
+                className="rounded-2xl inline-block"
                 data-atropos-offset="0"
               />
             </div>

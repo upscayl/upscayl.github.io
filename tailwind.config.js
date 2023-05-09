@@ -17,6 +17,16 @@ module.exports = {
         primary: ["Poppins"],
         secondary: ['"Open Sans"'],
       },
+      keyframes: {
+        "zoom-in-out": {
+          "0%": { transform: "scale(100%)" },
+          "50%": { transform: "scale(120%)" },
+          "100%": { transform: "scale(100%)" },
+        },
+      },
+      animation: {
+        "zoom-in-out": "zoom-in-out 1s  ease-in-out infinite",
+      },
     },
   },
   plugins: [],
