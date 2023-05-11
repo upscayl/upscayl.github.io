@@ -77,7 +77,7 @@ export default function Home() {
         className="z-0 fixed"
         numberOfPieces={50}
       />
-      <div className="absolute inset-0 flex flex-col justify-center items-center max-w-xl mx-auto text-center">
+      <div className="absolute z-50 inset-0 flex flex-col justify-center items-center max-w-xl mx-auto text-center">
         <Atropos className="my-atropos" shadowScale={0.1} highlight={false}>
           <div className="space-y-8">
             <h1
