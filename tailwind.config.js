@@ -13,6 +13,9 @@ module.exports = {
           dark: "#6D28D9",
         },
       },
+      screens: {
+        xs: "370px",
+      },
       fontFamily: {
         primary: ["Poppins"],
         secondary: ['"Open Sans"'],
