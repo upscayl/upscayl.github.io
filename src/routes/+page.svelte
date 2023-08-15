@@ -1,7 +1,7 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	// import Counter from './Counter.svelte';
+	import ring from '$lib/images/ring.png';
+	// import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -9,51 +9,22 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+<section class="w-full h-screen">
+	<div class="flex flex-col justify-center items-center gap-4 pt-80 relative z-10">
+		<h1 class="text-slate-400 text-6xl font-extralight">
+			From <span class="font-medium text-slate-200">Science Fiction</span> to
+			<span class="font-medium text-slate-200">Reality</span>
+		</h1>
+		<h4 class="text-slate-400 text-2xl font-light">
+			Supercharging your images with <span class="underline">AI</span>
+		</h4>
+	</div>
+	<img src={ring} alt="Ring" class="fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/3 z-0" />
 </section>
 
 <style>
 	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		background: url('/background_gradient.png') no-repeat center center fixed;
+		background-size: cover;
 	}
 </style>
