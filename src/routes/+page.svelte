@@ -57,21 +57,23 @@
 				</div>
 				<input
 					type="range"
-					min="0"
-					max="100"
+					min="01"
+					max="99"
 					value="50"
 					id="slider"
 					class="absolute inset-0 cursor-pointer w-full h-full opacity-0"
 					on:input={handleSlide}
 				/>
-				<div
+				<!-- <div
 					id="slider-button"
 					aria-hidden="true"
-					class="absolute bg-white/50 backdrop-blur-lg p-5 rounded-full grid place-items-center top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-				/>
-				<div
+					class="absolute bg-white/50 backdrop-blur-xl p-5 rounded-full grid place-items-center top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+				/> -->
+				<img
 					id="slider-line"
-					class="absolute inset-0 w-2 rounded-full -top-10 h-[120%] bg-white/50 backdrop-blur-lg z-10 -translate-x-1/2 pointer-events-none"
+					src="/slider.svg"
+					alt=""
+					class="absolute inset-0 rounded-full -top-10 h-[120%] z-10 -translate-x-1/2 pointer-events-none"
 				/>
 			</div>
 		</div>
