@@ -2,7 +2,7 @@
 	// import Counter from './Counter.svelte';
 	import ring from '$lib/images/ring.png';
 	import { onMount } from 'svelte';
-
+	import Icon from '@iconify/svelte';
 	let sliderPosition = 50;
 	let container: HTMLDivElement | null = null;
 
@@ -64,16 +64,16 @@
 					class="absolute inset-0 cursor-pointer w-full h-full opacity-0"
 					on:input={handleSlide}
 				/>
-				<!-- <div
+				<div
 					id="slider-button"
 					aria-hidden="true"
-					class="absolute bg-white/50 backdrop-blur-xl p-5 rounded-full grid place-items-center top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-				/> -->
-				<img
+					class="absolute bg-white/50 backdrop-blur-xl p-3 rounded-full grid place-items-center top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+				>
+					<Icon icon="carbon:drag-horizontal" width="24" />
+				</div>
+				<div
 					id="slider-line"
-					src="/slider.svg"
-					alt=""
-					class="absolute inset-0 rounded-full -top-10 h-[120%] z-10 -translate-x-1/2 pointer-events-none"
+					class="absolute inset-0 w-1 rounded-full -top-10 h-[120%] bg-white/50 backdrop-blur-xl z-10 -translate-x-1/2 pointer-events-none"
 				/>
 			</div>
 		</div>
