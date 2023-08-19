@@ -3,7 +3,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<nav class="fixed top-0 z-50 flex w-full items-center justify-between px-20 py-4">
+<nav class="fixed top-0 z-50 flex w-full items-center justify-between px-20 py-4 backdrop-blur-3xl">
 	<div class="flex gap-2">
 		<img src={logo} alt="" class="" />
 		<h5 class="text-lg font-semibold text-slate-100">Upscayl</h5>
