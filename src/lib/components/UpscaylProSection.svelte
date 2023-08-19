@@ -28,7 +28,8 @@
 		</div>
 
 		<div
-			class="flex flex-col gap-8 rounded-3xl bg-gradient-to-t from-slate-800 to-transparent px-36 py-20 ring-1"
+			class="flex flex-col gap-8 rounded-3xl bg-gradient-to-t from-slate-800 to-transparent px-36 py-20"
+			id="join-beta"
 		>
 			<h3 class="text-3xl font-medium text-slate-300">
 				Join the beta waitlist for <u class="text-slate-100">free</u>
@@ -41,7 +42,7 @@
 				</div>
 
 				<button
-					class="ring-ring-500 rounded-full bg-green-600 px-8 py-3 font-semibold text-green-200 ring-1 ring-green-500 transition-all duration-500 hover:bg-green-500"
+					class="ring-ring-500 rounded-full bg-green-600 px-8 py-3 font-medium text-green-200 ring-1 ring-green-500 transition-all duration-500 hover:bg-green-500"
 				>
 					Join the waitlist
 				</button>
@@ -51,4 +52,9 @@
 </section>
 
 <style>
+	#join-beta {
+		border-radius: 1.875rem;
+
+		background: linear-gradient(180deg, rgba(31, 41, 55, 0) 0%, #1f2937 100%);
+	}
 </style>
