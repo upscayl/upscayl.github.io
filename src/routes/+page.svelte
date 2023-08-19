@@ -23,13 +23,19 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="w-full h-screen">
-	<div class="flex flex-col justify-center items-center gap-4 pt-80 relative z-10">
-		<h1 class="text-slate-400 text-6xl font-extralight">
+<section class="h-screen w-full">
+	<div class="relative z-10 flex flex-col items-center justify-center gap-4 pt-48">
+		<button
+			class="flex items-center justify-center gap-2 rounded-full bg-slate-800 px-3 py-1 text-slate-300 ring-1 ring-slate-500"
+		>
+			<img src="/dot.svg" />
+			Introducing Upscayl Pro <Icon icon="ei:arrow-right" width="1.2rem" />
+		</button>
+		<h1 class="mt-16 text-6xl font-extralight text-slate-400">
 			From <span class="font-medium text-slate-200">Science Fiction</span> to
 			<span class="font-medium text-slate-200">Reality</span>
 		</h1>
-		<h4 class="text-slate-400 text-2xl font-light">
+		<h4 class="text-2xl font-light text-slate-400">
 			Supercharging your images with <span class="underline">AI</span>
 		</h4>
 		<!-- <div class="w-[30rem] rounded-xl mt-16 overflow-hidden">
@@ -41,18 +47,18 @@
 				class="grid place-content-center overflow-hidden rounded-2xl"
 				style="--position: {sliderPosition}%"
 			>
-				<div id="image-container" class="max-w-2xl max-h-96">
+				<div id="image-container" class="max-h-96 max-w-2xl">
 					<img
 						id="image-before"
 						src="/low.jpg"
 						alt=""
-						class="h-full rounded-xl object-cover object-left absolute inset-0"
+						class="absolute inset-0 h-full rounded-xl object-cover object-left"
 					/>
 					<img
 						id="image-after"
 						src="/high.jpg"
 						alt=""
-						class="w-full h-full object-cover object-left"
+						class="h-full w-full object-cover object-left"
 					/>
 				</div>
 				<input
@@ -61,30 +67,30 @@
 					max="99"
 					value="50"
 					id="slider"
-					class="absolute inset-0 cursor-pointer w-full h-full opacity-0"
+					class="absolute inset-0 h-full w-full cursor-pointer opacity-0"
 					on:input={handleSlide}
 				/>
 				<div
 					id="slider-button"
 					aria-hidden="true"
-					class="absolute bg-white/50 backdrop-blur-xl p-3 rounded-full grid place-items-center top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+					class="pointer-events-none absolute top-1/2 z-50 grid -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/50 p-3 backdrop-blur-xl"
 				>
 					<Icon icon="carbon:drag-horizontal" width="24" />
 				</div>
 				<div
 					id="slider-line"
-					class="absolute inset-0 w-1 rounded-full -top-10 h-[120%] bg-white/50 backdrop-blur-xl z-10 -translate-x-1/2 pointer-events-none"
+					class="pointer-events-none absolute inset-0 -top-10 z-10 h-[120%] w-1 -translate-x-1/2 rounded-full bg-white/50 backdrop-blur-xl"
 				/>
 			</div>
 		</div>
 	</div>
 
-	<img src={ring} alt="Ring" class="fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/3 z-0" />
+	<img src={ring} alt="Ring" class="fixed left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/3" />
 </section>
 
 <style>
 	section {
-		background: url('/background_gradient.png') no-repeat center center fixed;
+		background: url('/background_gradient.png');
 		background-size: cover;
 	}
 

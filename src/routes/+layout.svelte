@@ -3,7 +3,7 @@
 	import './styles.css';
 </script>
 
-<div class="bg-slate-900 w-full min-h-screen">
+<div class="min-h-screen w-full bg-slate-900">
 	<Header />
 
 	<main>
