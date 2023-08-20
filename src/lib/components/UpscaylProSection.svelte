@@ -4,8 +4,8 @@
 	import Input from './ui/Input.svelte';
 </script>
 
-<section class="mt-20 flex min-h-screen w-full flex-col items-center gap-10">
-	<h5 class="text-xs font-bold uppercase text-slate-500">Introducing Upscayl Pro</h5>
+<section class="mt-20 flex min-h-screen w-full flex-col items-center gap-10" id="cloud">
+	<h5 class="text-xs font-bold uppercase text-slate-500">Introducing Upscayl Cloud</h5>
 
 	<div class="flex flex-col items-center gap-8">
 		<h1 class="text-5xl font-semibold text-slate-200">

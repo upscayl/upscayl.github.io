@@ -9,15 +9,19 @@
 		<h5 class="text-lg font-semibold text-slate-100">Upscayl</h5>
 	</div>
 	<div class="flex gap-10 text-sm text-slate-300">
-		<a href="">Desktop</a>
-		<a href="">Pro</a>
-		<a href="">Download</a>
-		<a href="" class="flex items-center justify-center gap-2">
-			<Icon icon="ph:github-logo-fill" width={20} />
+		<a href="#cloud">Cloud</a>
+		<a href="#desktop">Desktop</a>
+		<a href="#download">Download</a>
+		<a
+			href="https://github.com/upscayl"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="flex items-center justify-center gap-2"
+		>
+			<Icon icon="ph:github-logo-fill" width={20} /> GitHub Open Source
 		</a>
 	</div>
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
-		<!-- <a href="">About</a> -->
 		<button
 			class="rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
 			>Download</button

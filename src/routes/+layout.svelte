@@ -1,7 +1,27 @@
-<script>
+<script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import './styles.css';
 	import logo from '$lib/images/logo_small.png';
+	import { onMount } from 'svelte';
+
+	function handleAnchorClick(event: any) {
+		event.preventDefault();
+		const link = event.currentTarget;
+		const anchorId = new URL(link.href).hash.replace('#', '');
+		const anchor = document.getElementById(anchorId);
+		if (!anchor) return;
+		window.scrollTo({
+			top: anchor.offsetTop - 100,
+			behavior: 'smooth'
+		});
+	}
+
+	onMount(() => {
+		const anchors = document.querySelectorAll('a[href^="#"]');
+		anchors.forEach((anchor) => {
+			anchor.addEventListener('click', handleAnchorClick);
+		});
+	});
 </script>
 
 <div class="min-h-screen w-full bg-slate-900">

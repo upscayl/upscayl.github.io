@@ -3,7 +3,7 @@
 	import Input from './ui/Input.svelte';
 </script>
 
-<div class="flex flex-col gap-20 px-24 text-slate-300">
+<div class="flex flex-col gap-20 px-24 text-slate-300" id="download">
 	<h1 class="text-4xl font-semibold text-slate-200">Download Upscayl</h1>
 
 	<div class="grid grid-cols-4 grid-rows-1 place-items-center">
@@ -42,7 +42,7 @@
 </div>
 
 <div
-	class="mx-auto mt-32 flex max-w-3xl flex-col gap-8 rounded-3xl bg-slate-800 px-36 py-20"
+	class="mx-auto mt-32 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-28 py-20"
 	id="join-beta"
 >
 	<h3 class="text-center text-3xl font-medium text-slate-300">

@@ -15,12 +15,13 @@
 
 <section class="min-h-screen w-full">
 	<div class="relative z-10 flex flex-col items-center justify-center gap-4 pt-48">
-		<button
+		<a
+			href="#cloud"
 			class="flex items-center justify-center gap-2 rounded-full bg-slate-800 px-3 py-1 text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700"
 		>
 			<img src="/dot.svg" />
-			Introducing Upscayl Pro <Icon icon="ph:arrow-right" width="16px" />
-		</button>
+			Introducing Upscayl Cloud <Icon icon="ph:arrow-right" width="16px" />
+		</a>
 		<h1 class="mt-16 text-6xl font-extralight text-slate-400">
 			From <span class="font-medium text-slate-200">Science Fiction</span> to
 			<span class="font-medium text-slate-200">Reality</span>
