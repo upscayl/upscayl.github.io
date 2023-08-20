@@ -17,7 +17,7 @@
 		</a>
 	</div>
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
-		<a href="">About</a>
+		<!-- <a href="">About</a> -->
 		<button
 			class="rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
 			>Download</button
