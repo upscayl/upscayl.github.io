@@ -6,7 +6,7 @@
 <div class="flex flex-col gap-20 px-24 text-slate-300">
 	<h1 class="text-4xl font-semibold text-slate-200">Download Upscayl</h1>
 
-	<div class="grid grid-cols-3 grid-rows-1 place-items-center">
+	<div class="grid grid-cols-4 grid-rows-1 place-items-center">
 		<button
 			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
 		>
@@ -29,6 +29,14 @@
 			<Icon icon="ph:windows-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Windows</h5>
 			<p class="text-sm text-slate-400">Windows 8 and above</p>
+		</button>
+
+		<button
+			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
+		>
+			<Icon icon="ph:devices" width="5rem" />
+			<h5 class="text-xl font-medium">Cloud - Any Device</h5>
+			<p class="text-sm text-slate-400">Coming Soon...</p>
 		</button>
 	</div>
 </div>

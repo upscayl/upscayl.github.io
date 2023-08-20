@@ -50,11 +50,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	#join-beta {
-		border-radius: 1.875rem;
-
-		background: linear-gradient(180deg, rgba(31, 41, 55, 0) 0%, #1f2937 100%);
-	}
-</style>

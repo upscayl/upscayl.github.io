@@ -16,7 +16,7 @@
 <section class="min-h-screen w-full">
 	<div class="relative z-10 flex flex-col items-center justify-center gap-4 pt-48">
 		<button
-			class="flex items-center justify-center gap-2 rounded-full bg-slate-800 px-3 py-1 text-slate-300 ring-1 ring-slate-500"
+			class="flex items-center justify-center gap-2 rounded-full bg-slate-800 px-3 py-1 text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700"
 		>
 			<img src="/dot.svg" />
 			Introducing Upscayl Pro <Icon icon="ph:arrow-right" width="16px" />

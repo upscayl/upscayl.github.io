@@ -1,6 +1,5 @@
 <script>
 	import IconList from './ui/IconList.svelte';
-	import Input from './ui/Input.svelte';
 </script>
 
 <div class="relative mt-40 flex min-h-screen w-full flex-row overflow-hidden px-24">
