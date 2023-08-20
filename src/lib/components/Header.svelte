@@ -11,7 +11,6 @@
 	<div class="flex gap-10 text-sm text-slate-300">
 		<a href="#cloud">Cloud</a>
 		<a href="#desktop">Desktop</a>
-		<a href="#download">Download</a>
 		<a
 			href="https://github.com/upscayl"
 			target="_blank"
@@ -22,9 +21,10 @@
 		</a>
 	</div>
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
-		<button
+		<a
+			href="#download"
 			class="rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
-			>Download</button
+			>Download</a
 		>
 	</div>
 </nav>

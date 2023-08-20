@@ -42,7 +42,7 @@
 </div>
 
 <div
-	class="mx-auto mt-32 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-28 py-20"
+	class="mx-auto mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-28 py-20"
 	id="join-beta"
 >
 	<h3 class="text-center text-3xl font-medium text-slate-300">
