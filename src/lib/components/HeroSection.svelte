@@ -13,8 +13,8 @@
 	};
 </script>
 
-<section class="min-h-screen w-full">
-	<div class="relative z-10 flex flex-col items-center justify-center gap-4 pt-48">
+<section class="min-h-fit relative text-center w-full overflow-visible">
+	<div class="relative px-6 z-10 flex flex-col items-center justify-center gap-4 pt-48 overflow-visible">
 		<a
 			href="#cloud"
 			class="flex items-center justify-center gap-2 rounded-full bg-slate-800 px-3 py-1 text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700"
@@ -32,6 +32,12 @@
 		<!-- <div class="w-[30rem] rounded-xl mt-16 overflow-hidden">
 			<img src={low_res} alt="low_res" class="w-full" />
 		</div> -->
+		<img src="/background_gradient.png" alt="Ring" class="absolute resize-none top-0 left-0 w-full object-cover">
+		<img
+			src={ring}
+			alt="Ring"
+			class="absolute object-cover resize-none left-1/2 z-0 top-[40%] sm:top-[57%] md::top-[57%] xl:top-[57%] -translate-x-1/2 -translate-y-1/3"
+		/>
 		<div class="relative mt-10">
 			<div
 				id="slider-container"
@@ -75,12 +81,6 @@
 			</div>
 		</div>
 	</div>
-
-	<img
-		src={ring}
-		alt="Ring"
-		class="absolute left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/3"
-	/>
 </section>
 
 <style>

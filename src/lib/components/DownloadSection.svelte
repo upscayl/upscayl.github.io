@@ -3,10 +3,11 @@
 	import Input from './ui/Input.svelte';
 </script>
 
-<div class="flex flex-col gap-20 px-24 text-slate-300" id="download">
+<section class="items-center flex flex-col">
+<div class="flex flex-col text-center gap-20 px-24 text-slate-300" id="download">
 	<h1 class="text-4xl font-semibold text-slate-200">Download Upscayl</h1>
 
-	<div class="grid grid-cols-4 grid-rows-1 place-items-center">
+	<div class="flex flex-row flex-wrap justify-evenly gap-6">
 		<button
 			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
 		>
@@ -42,7 +43,7 @@
 </div>
 
 <div
-	class="mx-auto mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-28 py-20"
+	class="mx-6 mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-14 md:px-28 py-20"
 	id="join-beta"
 >
 	<h3 class="text-center text-3xl font-medium text-slate-300">
@@ -62,3 +63,4 @@
 		</button>
 	</div>
 </div>
+</section>

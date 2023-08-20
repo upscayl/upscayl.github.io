@@ -4,13 +4,13 @@
 	import Input from './ui/Input.svelte';
 </script>
 
-<section class="mt-20 flex min-h-screen w-full flex-col items-center gap-10" id="cloud">
+<section class="mt-20 flex min-h-screen w-full flex-col items-center gap-10 p-6 text-center" id="cloud">
 	<h5 class="text-xs font-bold uppercase text-slate-500">Introducing Upscayl Cloud</h5>
 
-	<div class="flex flex-col items-center gap-8">
-		<h1 class="text-5xl font-semibold text-slate-200">
+	<div class="flex flex-col w-full break-words items-center gap-8">
+		<p class="text-5xl font-semibold text-slate-200">
 			Let's change the game <span class="text-3xl text-slate-400">(again)</span>
-		</h1>
+		</p>
 
 		<p class="max-w-2xl text-center text-xl text-slate-400">
 			Free yourself from all the constraints. Upscayl is now everywhere! <br />
@@ -28,7 +28,7 @@
 		</div>
 
 		<div
-			class="flex flex-col gap-8 rounded-3xl bg-gradient-to-t from-slate-800 to-transparent px-36 py-20"
+			class="flex w-fit flex-col gap-8 rounded-3xl bg-gradient-to-t from-slate-800 to-transparent px-12 md:px-24 lg:px-36 py-20"
 			id="join-beta"
 		>
 			<h3 class="text-3xl font-medium text-slate-300">

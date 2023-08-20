@@ -24,15 +24,15 @@
 	});
 </script>
 
-<div class="min-h-screen w-full bg-slate-900">
+<div class="min-h-screen w-full relative bg-slate-900">
 	<Header />
 
 	<main>
 		<slot />
 	</main>
 
-	<footer class="mt-20 flex min-h-fit flex-col bg-slate-800 px-20 pb-4 pt-10">
-		<div class="flex flex-row gap-40">
+	<footer class="mt-20 flex min-h-fit flex-col bg-slate-800 md:px-20 pb-4 pt-10">
+		<div class="flex flex-row md:justify-between justify-evenly">
 			<div class="flex h-10 flex-row items-center justify-center gap-2">
 				<img src={logo} alt="" />
 				<h5 class="text-xl font-semibold text-slate-100">Upscayl</h5>

@@ -11,7 +11,6 @@
 	<meta name="color-scheme" content="dark" />
 </svelte:head>
 
-<img src="/background_gradient.png" class="absolute h-full w-full" alt="background gradient" />
 
 <HeroSection />
 <UpscaylProSection />
