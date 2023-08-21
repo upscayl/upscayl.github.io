@@ -41,20 +41,25 @@
 			<div class="flex flex-col gap-4 p-4 text-slate-300">
 				<b>Links</b>
 				<div class="flex flex-col gap-2 text-sm">
-					<a href="">GitHub Open Source</a>
-					<a href="">Wiki</a>
+					<a href="https://github.com/upscayl" target="_blank" rel="noreferrer"
+						>GitHub Open Source</a
+					>
+					<a href="https://github.com/upscayl/upscayl/wiki">Wiki</a>
 				</div>
 			</div>
 
 			<div class="flex flex-col gap-4 break-all p-4 text-slate-300">
 				<b>Support</b>
 				<div class="flex flex-col gap-2 text-sm">
-					<a href="">FAQ</a>
+					<a href="https://github.com/upscayl/upscayl/#-faq" target="_blank" rel="noreferrer">FAQ</a
+					>
 					<a href="mailto:nayam.emikx@aleeas.com"
 						>Email: <span class="text-slate-400">nayam.emikx@aleeas.com</span></a
 					>
-					<a href="">GitHub Discussion</a>
-					<a href="">Telegram</a>
+					<a href="https://github.com/orgs/upscayl/discussions" target="_blank" rel="noreferrer"
+						>GitHub Discussion</a
+					>
+					<a href="https://t.me/iamnayam" target="_blank" rel="noreferrer">Telegram</a>
 				</div>
 			</div>
 		</div>
