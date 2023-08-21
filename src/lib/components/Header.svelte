@@ -3,12 +3,14 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<nav class="fixed top-0 z-50 flex w-full items-center justify-between px-20 py-4 backdrop-blur-3xl">
+<nav
+	class="fixed top-0 z-50 flex w-full items-center justify-between px-2 py-4 backdrop-blur-3xl md:px-20"
+>
 	<div class="flex gap-2">
 		<img src={logo} alt="" class="" />
-		<h5 class="text-lg font-semibold text-slate-100">Upscayl</h5>
+		<h5 class="hidden text-lg font-semibold text-slate-100 md:block">Upscayl</h5>
 	</div>
-	<div class="flex gap-10 text-sm text-slate-300">
+	<div class="hidden gap-10 text-sm text-slate-300 md:flex">
 		<a href="#cloud">Cloud</a>
 		<a href="#desktop">Desktop</a>
 		<a

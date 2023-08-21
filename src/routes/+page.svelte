@@ -2,7 +2,7 @@
 	import DesktopFeatures from '$lib/components/DesktopFeatures.svelte';
 	import DownloadSection from '$lib/components/DownloadSection.svelte';
 	import HeroSection from '$lib/components/HeroSection.svelte';
-	import UpscaylProSection from '$lib/components/UpscaylProSection.svelte';
+	import UpscaylCloudSection from '$lib/components/UpscaylCloudSection.svelte';
 </script>
 
 <svelte:head>
@@ -14,6 +14,6 @@
 <img src="/background_gradient.png" class="absolute h-full w-full" alt="background gradient" />
 
 <HeroSection />
-<UpscaylProSection />
+<UpscaylCloudSection />
 <DesktopFeatures />
 <DownloadSection />

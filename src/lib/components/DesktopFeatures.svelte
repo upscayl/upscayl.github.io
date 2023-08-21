@@ -2,8 +2,11 @@
 	import IconList from './ui/IconList.svelte';
 </script>
 
-<div class="relative mt-40 flex min-h-screen w-full flex-row overflow-hidden px-24" id="desktop">
-	<div class="flex flex-col gap-8 py-20">
+<div
+	class="relative mt-40 flex min-h-screen w-full flex-col-reverse overflow-hidden px-4 md:px-24 lg:flex-row"
+	id="desktop"
+>
+	<div class="flex flex-col gap-8 pb-20 md:py-20">
 		<h3 class="text-4xl font-semibold leading-snug text-slate-300">
 			Good is not good enough. <br /><span class="text-slate-50">Make it better!</span>
 		</h3>
@@ -20,7 +23,7 @@
 		</div>
 	</div>
 
-	<div class="absolute -right-1/4">
-		<img src="/upscayl-desktop.png" alt="Upscayl Desktop Screenshot" class="ml-52" />
+	<div class="-right-1/4 left-1/2 lg:absolute">
+		<img src="/upscayl-desktop.png" alt="Upscayl Desktop Screenshot" class="lg:ml-16" />
 	</div>
 </div>

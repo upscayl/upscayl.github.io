@@ -3,12 +3,14 @@
 	import Input from './ui/Input.svelte';
 </script>
 
-<div class="flex flex-col gap-20 px-24 text-slate-300" id="download">
+<div class="flex flex-col gap-20 px-4 text-slate-300 md:px-24" id="download">
 	<h1 class="text-4xl font-semibold text-slate-200">Download Upscayl</h1>
 
-	<div class="grid grid-cols-4 grid-rows-1 place-items-center">
+	<div
+		class="grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 xl:grid-cols-4"
+	>
 		<button
-			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
+			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
 		>
 			<Icon icon="ph:linux-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Linux</h5>
@@ -16,7 +18,7 @@
 		</button>
 
 		<button
-			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
+			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
 		>
 			<Icon icon="ph:apple-logo" width="5rem" />
 			<h5 class="text-xl font-medium">macOS</h5>
@@ -24,7 +26,7 @@
 		</button>
 
 		<button
-			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
+			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
 		>
 			<Icon icon="ph:windows-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Windows</h5>
@@ -32,7 +34,7 @@
 		</button>
 
 		<button
-			class="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700"
+			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
 		>
 			<Icon icon="ph:devices" width="5rem" />
 			<h5 class="text-xl font-medium">Cloud - Any Device</h5>
@@ -42,7 +44,7 @@
 </div>
 
 <div
-	class="mx-auto mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-28 py-20"
+	class="mx-4 mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-4 py-20 sm:mx-auto md:px-28"
 	id="join-beta"
 >
 	<h3 class="text-center text-3xl font-medium text-slate-300">
