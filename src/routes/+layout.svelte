@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col gap-4 p-4 text-slate-300">
+			<div class="flex flex-col gap-4 break-all p-4 text-slate-300">
 				<b>Support</b>
 				<div class="flex flex-col gap-2 text-sm">
 					<a href="">FAQ</a>

@@ -8,7 +8,7 @@
 >
 	<div class="flex gap-2">
 		<img src={logo} alt="" class="" />
-		<h5 class="hidden text-lg font-semibold text-slate-100 md:block">Upscayl</h5>
+		<h5 class="text-lg font-semibold text-slate-100">Upscayl</h5>
 	</div>
 	<div class="hidden gap-10 text-sm text-slate-300 md:flex">
 		<a href="#cloud" class="flex items-center justify-center gap-2"
@@ -29,7 +29,7 @@
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
 		<a
 			href="#download"
-			class="flex gap-2 rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
+			class="flex items-center gap-2 rounded-full bg-slate-800 px-3 py-2 text-xs font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70 sm:text-sm"
 			><Icon icon="ph:download-fill" width={20} /> Download</a
 		>
 	</div>
