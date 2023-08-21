@@ -11,8 +11,12 @@
 		<h5 class="hidden text-lg font-semibold text-slate-100 md:block">Upscayl</h5>
 	</div>
 	<div class="hidden gap-10 text-sm text-slate-300 md:flex">
-		<a href="#cloud">Cloud</a>
-		<a href="#desktop">Desktop</a>
+		<a href="#cloud" class="flex items-center justify-center gap-2"
+			><Icon icon="ph:cloud-fill" width={20} /> Cloud</a
+		>
+		<a href="#desktop" class="flex items-center justify-center gap-2"
+			><Icon icon="ph:desktop-fill" width={20} /> Desktop</a
+		>
 		<a
 			href="https://github.com/upscayl"
 			target="_blank"
@@ -25,8 +29,8 @@
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
 		<a
 			href="#download"
-			class="rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
-			>Download</a
+			class="flex gap-2 rounded-full bg-slate-800 px-3 py-2 text-sm font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70"
+			><Icon icon="ph:download-fill" width={20} /> Download</a
 		>
 	</div>
 </nav>
