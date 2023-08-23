@@ -7,7 +7,6 @@
 
 <svelte:head>
 	<title>Upscayl - AI Image Upscaler</title>
-	<meta name="description" content="Svelte demo app" />
 	<meta name="color-scheme" content="dark" />
 	<title>Upscayl - AI Image Upscaler</title>
 	<meta name="description" content="Upscayl - Free and Open Source AI Image Upscaler" />
