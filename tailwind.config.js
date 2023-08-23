@@ -1,36 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        palette: {
-          light: "#F5F3FF",
-          primary: "#7C3AED",
-          dark: "#6D28D9",
-        },
-      },
-      screens: {
-        xs: "370px",
-      },
-      fontFamily: {
-        primary: ["Poppins"],
-        secondary: ['"Open Sans"'],
-      },
-      keyframes: {
-        "zoom-in-out": {
-          "0%": { transform: "scale(100%)" },
-          "50%": { transform: "scale(110%)" },
-          "100%": { transform: "scale(100%)" },
-        },
-      },
-      animation: {
-        "zoom-in-out": "zoom-in-out 1s  ease-in-out infinite",
-      },
-    },
-  },
-  plugins: [],
+export default {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
+	theme: {
+		extend: {
+			keyframes: {
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' }
+				},
+				marquee2: {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0%)' }
+				}
+			},
+			animation: {
+				'spin-slow-30': 'spin 30s linear infinite',
+				'spin-slow-25': 'spin 25s linear infinite',
+				'spin-slow-10': 'spin 10s linear infinite',
+				'marquee-infinite': 'marquee 25s linear infinite'
+			}
+		}
+	},
+	plugins: []
 };
