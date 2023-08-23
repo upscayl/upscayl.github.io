@@ -19,7 +19,7 @@
 		name="twitter:description"
 		content="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 	/>
-	<meta name="twitter:image" content="https://upscayl.org/ogimage.png" />
+	<meta name="twitter:image" content="https://upscayl.org/og-image.png" />
 
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Upscayl - Free and Open Source AI Image Upscaler" />
@@ -29,7 +29,7 @@
 	/>
 	<meta property="og:site_name" content="Upscayl" />
 	<meta property="og:url" content="https://upscayl.org" />
-	<meta property="og:image" content="https://upscayl.org/ogimage.png" />
+	<meta property="og:image" content="https://upscayl.org/og-image.png" />
 </svelte:head>
 
 <img src="/background_gradient.png" class="absolute h-full w-full" alt="background gradient" />
