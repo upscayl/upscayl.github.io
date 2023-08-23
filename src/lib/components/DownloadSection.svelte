@@ -67,7 +67,7 @@
 			Download for <span class="font-medium text-slate-100">Linux</span>
 		</h3>
 		<div
-			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
 			<a href="">AppImage (Universal Portable)</a>
@@ -91,7 +91,7 @@
 			Download for <span class="font-medium text-slate-100">macOS</span>
 		</h3>
 		<div
-			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
 			<a href="">DMG</a>
@@ -110,7 +110,7 @@
 			Download for <span class="font-medium text-slate-100">Windows</span>
 		</h3>
 		<div
-			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
 			<a href="">EXE Installer</a>
