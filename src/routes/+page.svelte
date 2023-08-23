@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Upscayl - AI Image Upscaler</title>
 	<meta name="description" content="Svelte demo app" />
 	<meta name="color-scheme" content="dark" />
 	<title>Upscayl - AI Image Upscaler</title>
