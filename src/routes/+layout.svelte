@@ -1,4 +1,6 @@
 <script lang="ts">
+	export const prerender = true;
+
 	import Header from '$lib/components/Header.svelte';
 	import './styles.css';
 	import logo from '$lib/images/logo_small.png';
