@@ -70,13 +70,39 @@
 			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
-			<a href="">AppImage (Universal Portable)</a>
-			<a href="">Flatpak (Universal)</a>
-			<a href="">Snap Store</a>
-			<a href="">DEB (Debian/Ubuntu based)</a>
-			<a href="">RPM (Fedora based)</a>
-			<a href="">ZIP (Universal Portable)</a>
-			<a href="">AUR (Arch based)</a>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-linux.AppImage"
+				target="_blank"
+				rel="noreferrer noopener">AppImage (Universal Portable)</a
+			>
+			<a
+				href="https://flathub.org/apps/org.upscayl.Upscayl"
+				target="_blank"
+				rel="noreferrer noopener">Flatpak (Universal)</a
+			>
+			<a href="https://snapcraft.io/upscayl/" target="_blank" rel="noreferrer noopener"
+				>Snap Store</a
+			>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-linux.deb"
+				target="_blank"
+				rel="noreferrer noopener">DEB (Debian/Ubuntu based)</a
+			>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-linux.rpm"
+				target="_blank"
+				rel="noreferrer noopener">RPM (Fedora based)</a
+			>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-linux.zip"
+				target="_blank"
+				rel="noreferrer noopener">ZIP (Universal Portable)</a
+			>
+			<a
+				href="https://aur.archlinux.org/packages/upscayl-bin"
+				target="_blank"
+				rel="noreferrer noopener">AUR (Arch based)</a
+			>
 		</div>
 	</div>
 </Modal>
@@ -94,8 +120,12 @@
 			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
-			<a href="">DMG</a>
-			<a href="">App Store (Coming Soon...)</a>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-mac.dmg"
+				target="_blank"
+				rel="noreferrer noopener">DMG</a
+			>
+			<a href="#" target="_blank" rel="noreferrer noopener">App Store (Coming Soon...)</a>
 		</div>
 	</div>
 </Modal>
@@ -113,8 +143,12 @@
 			class="flex max-h-72 flex-col gap-4 overflow-y-auto py-2 text-center font-medium text-slate-300 sm:max-h-96"
 			id="download-links-list"
 		>
-			<a href="">EXE Installer</a>
-			<a href="">Microsoft Store (Coming Soon...)</a>
+			<a
+				href="https://github.com/upscayl/upscayl/releases/download/v2.5.5/upscayl-2.5.5-win.exe"
+				target="_blank"
+				rel="noreferrer noopener">EXE Installer</a
+			>
+			<a href="#" target="_blank" rel="noreferrer noopener">Microsoft Store (Coming Soon...)</a>
 		</div>
 	</div>
 </Modal>
