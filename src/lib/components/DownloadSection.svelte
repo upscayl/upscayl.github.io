@@ -1,6 +1,14 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import Input from './ui/Input.svelte';
+	import Modal from './ui/Modal.svelte';
+	import IconList from './ui/IconList.svelte';
+	import JoinWaitlist from './JoinWaitlist.svelte';
+
+	let showLinuxModal = false;
+	let showMacModal = false;
+	let showWindowsModal = false;
+	let showCloudModal = false;
 </script>
 
 <div class="flex flex-col gap-20 px-4 text-slate-300 md:px-24" id="download">
@@ -11,6 +19,7 @@
 	>
 		<button
 			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
+			on:click={() => (showLinuxModal = true)}
 		>
 			<Icon icon="ph:linux-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Linux</h5>
@@ -19,6 +28,7 @@
 
 		<button
 			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
+			on:click={() => (showMacModal = true)}
 		>
 			<Icon icon="ph:apple-logo" width="5rem" />
 			<h5 class="text-xl font-medium">macOS</h5>
@@ -27,6 +37,7 @@
 
 		<button
 			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
+			on:click={() => (showWindowsModal = true)}
 		>
 			<Icon icon="ph:windows-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Windows</h5>
@@ -35,6 +46,7 @@
 
 		<button
 			class="flex h-56 w-56 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 ring-1 ring-slate-500 transition-all duration-500 hover:scale-110 hover:bg-slate-700 md:h-64 md:w-64"
+			on:click={() => (showCloudModal = true)}
 		>
 			<Icon icon="ph:devices" width="5rem" />
 			<h5 class="text-xl font-medium">Cloud - Any Device</h5>
@@ -43,24 +55,77 @@
 	</div>
 </div>
 
-<div
-	class="mx-4 mt-20 flex max-w-2xl flex-col gap-8 rounded-3xl bg-slate-800 px-4 py-20 sm:mx-auto md:px-28"
-	id="join-beta"
->
-	<h3 class="text-center text-3xl font-medium text-slate-300">
-		Join Upscayl Pro beta for <u class="text-slate-100">free</u>
-	</h3>
+<JoinWaitlist />
 
-	<div class="flex flex-col gap-5">
-		<div class="flex flex-col gap-4">
-			<Input placeholder="Your Name" />
-			<Input placeholder="Your Email" />
-		</div>
-
-		<button
-			class="ring-ring-500 rounded-full bg-green-600 px-8 py-3 font-medium text-green-200 ring-1 ring-green-500 transition-all duration-500 hover:bg-green-500"
+<Modal bind:showModal={showLinuxModal}>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div
+		class="z-50 flex w-11/12 flex-col gap-5 rounded-xl bg-slate-800 p-4 sm:max-w-lg"
+		on:click|stopPropagation
+	>
+		<h3 class="text-lg text-slate-300">
+			Download for <span class="font-medium text-slate-100">Linux</span>
+		</h3>
+		<div
+			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			id="download-links-list"
 		>
-			Join the waitlist
-		</button>
+			<a href="">AppImage (Universal Portable)</a>
+			<a href="">Flatpak (Universal)</a>
+			<a href="">Snap Store</a>
+			<a href="">DEB (Debian/Ubuntu based)</a>
+			<a href="">RPM (Fedora based)</a>
+			<a href="">ZIP (Universal Portable)</a>
+			<a href="">AUR (Arch based)</a>
+		</div>
 	</div>
-</div>
+</Modal>
+
+<Modal bind:showModal={showMacModal}>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div
+		class="z-50 flex w-11/12 flex-col gap-5 rounded-xl bg-slate-800 p-4 sm:max-w-lg"
+		on:click|stopPropagation
+	>
+		<h3 class="text-lg text-slate-300">
+			Download for <span class="font-medium text-slate-100">macOS</span>
+		</h3>
+		<div
+			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			id="download-links-list"
+		>
+			<a href="">DMG</a>
+			<a href="">App Store (Coming Soon...)</a>
+		</div>
+	</div>
+</Modal>
+
+<Modal bind:showModal={showWindowsModal}>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div
+		class="z-50 flex w-11/12 flex-col gap-5 rounded-xl bg-slate-800 p-4 sm:max-w-lg"
+		on:click|stopPropagation
+	>
+		<h3 class="text-lg text-slate-300">
+			Download for <span class="font-medium text-slate-100">Windows</span>
+		</h3>
+		<div
+			class="flex max-h-72 flex-col gap-4 overflow-scroll py-2 text-center font-medium text-slate-300 sm:max-h-96"
+			id="download-links-list"
+		>
+			<a href="">EXE Installer</a>
+			<a href="">Microsoft Store (Coming Soon...)</a>
+		</div>
+	</div>
+</Modal>
+
+<Modal bind:showModal={showCloudModal}>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<JoinWaitlist />
+</Modal>
+
+<style>
+	#download-links-list a {
+		@apply mx-4 flex items-center justify-center gap-2 rounded-lg bg-slate-700 p-2 ring-1 ring-slate-500;
+	}
+</style>
