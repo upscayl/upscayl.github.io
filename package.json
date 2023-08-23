@@ -8,7 +8,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "node ./gh-pages.js"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
@@ -23,6 +24,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
+		"gh-pages": "^6.0.0",
 		"postcss": "^8.4.27",
 		"prettier": "^3.0.2",
 		"prettier-plugin-svelte": "^3.0.3",
