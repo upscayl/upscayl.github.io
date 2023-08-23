@@ -9,6 +9,10 @@
 	<title>Upscayl - AI Image Upscaler</title>
 	<meta name="color-scheme" content="dark" />
 
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+
 	<link rel="icon" type="image/png" href="/logo.png" />
 
 	<meta name="twitter:card" content="summary_large_image" />
