@@ -15,7 +15,7 @@
 	id="join-beta"
 >
 	<h3 class="text-center text-3xl font-medium text-slate-300">
-		Join Upscayl Cloud beta for <u class="text-slate-100">free</u>
+		Join the beta waitlist for <u class="text-slate-100">free</u>
 	</h3>
 
 	<div class="flex flex-col gap-5">
