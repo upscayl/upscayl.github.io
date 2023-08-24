@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 	import ring from '$lib/images/ring.png';
 	import { onMount } from 'svelte';
 	import Icon from '@iconify/svelte';
@@ -13,6 +13,17 @@
 		if (!container || !e.currentTarget) return;
 		container.style.setProperty('--position', `${e.target.value}%`);
 	};
+
+	let logos = [
+		'/muo_logo.svg',
+		'https://itsfoss.com/content/images/2023/01/itsfoss-logo.png',
+		'https://upload.wikimedia.org/wikipedia/commons/5/51/GIGAZINE_logo.svg',
+		'/htg_logo.png',
+		'https://ambcrypto.com/blog/wp-content/uploads/2023/03/AMB-Logo.png',
+		'https://cdn.nerdschalk.com/wp-content/uploads/2022/09/cropped-square-20-sept-orange-logo-nerdschalk-2-1-1.png',
+		'https://fosspost.org/wp-content/uploads/2020/07/cropped-fosspost-1.png',
+		'https://upload.wikimedia.org/wikipedia/commons/b/b2/Y_Combinator_logo.svg'
+	];
 </script>
 
 <section class="min-h-screen w-full overflow-hidden">
@@ -110,93 +121,17 @@
 			delay: 1200
 		}}
 	>
-		<p class="text-center font-bold text-slate-500">AS SEEN ON</p>
+		<p class="mb-5 text-center font-bold text-slate-500">AS SEEN ON</p>
 
-		<div class="relative whitespace-nowrap p-6" id="logos-container">
-			<div id="logos-slide" class="inline-block">
+		<div class="animate-marquee flex w-[200%] justify-evenly">
+			{#each [...logos, ...logos] as logo}
 				<img
-					src="/muo_logo.svg"
-					alt="Make Use Of Logo"
-					class="max-h-10 opacity-50 grayscale invert"
+					src={logo}
+					alt="logo"
+					class="max-h-10 object-contain px-10 opacity-50 grayscale invert"
 				/>
-				<img
-					src="https://itsfoss.com/content/images/2023/01/itsfoss-logo.png"
-					alt="It's FOSS Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/5/51/GIGAZINE_logo.svg"
-					alt="Gigazine Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="/htg_logo.png"
-					alt="How To Geek Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://ambcrypto.com/blog/wp-content/uploads/2023/03/AMB-Logo.png"
-					alt="AMB Crypto Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://cdn.nerdschalk.com/wp-content/uploads/2022/09/cropped-square-20-sept-orange-logo-nerdschalk-2-1-1.png"
-					alt="NerdsChalk Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://fosspost.org/wp-content/uploads/2020/07/cropped-fosspost-1.png"
-					alt="Foss Post Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Y_Combinator_logo.svg"
-					alt="Hacker News Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-			</div>
-			<div id="logos-slide" class="inline-block">
-				<img
-					src="/muo_logo.svg"
-					alt="Make Use Of Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://itsfoss.com/content/images/2023/01/itsfoss-logo.png"
-					alt="It's FOSS Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/5/51/GIGAZINE_logo.svg"
-					alt="Gigazine Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="/htg_logo.png"
-					alt="How To Geek Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://ambcrypto.com/blog/wp-content/uploads/2023/03/AMB-Logo.png"
-					alt="AMB Crypto Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://cdn.nerdschalk.com/wp-content/uploads/2022/09/cropped-square-20-sept-orange-logo-nerdschalk-2-1-1.png"
-					alt="NerdsChalk Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://fosspost.org/wp-content/uploads/2020/07/cropped-fosspost-1.png"
-					alt="Foss Post Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Y_Combinator_logo.svg"
-					alt="Hacker News Logo"
-					class="max-h-10 opacity-50 grayscale invert"
-				/>
-			</div>
+			{/each}
+			<img src="" alt="" />
 		</div>
 	</div>
 </section>
@@ -215,20 +150,15 @@
 	#slider-button {
 		left: var(--position);
 	}
-	@keyframes slide {
+	#marquee {
+		animation: marquee 10s linear infinite;
+	}
+	@keyframes marquee {
 		0% {
-			transform: translateX(0);
+			transform: translateX(0%);
 		}
 		100% {
-			transform: translateX(-100%);
+			transform: translateX(-50%); /* Adjust as needed */
 		}
-	}
-	#logos-slide img {
-		display: inline-block;
-		padding: 0 3rem;
-	}
-	#logos-slide {
-		animation: slide 15s linear infinite;
-		white-space: nowrap;
 	}
 </style>
