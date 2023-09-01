@@ -4,8 +4,8 @@
 	import { doc, setDoc } from 'firebase/firestore';
 	import { waitlistCollection } from '$lib/utils/firebase';
 
-	let name: string;
-	let email: string;
+	let name = '';
+	let email = '';
 
 	const nameRegex = /^[A-Za-z\s.'-]+$/;
 	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -60,7 +60,9 @@
 									email
 								});
 							} catch (error) {
-								alert('Error joining the waitlist. Please try again later...');
+								alert(
+									'Error joining the waitlist. Have you already registered? If not, please try again later...'
+								);
 								return;
 							}
 							alert(
