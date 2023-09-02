@@ -8,7 +8,7 @@
 	let email = '';
 
 	const nameRegex = /^[A-Za-z\s.'-]+$/;
-	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 </script>
 
 <section
@@ -53,7 +53,7 @@
 				<button
 					class="ring-ring-500 rounded-full bg-green-600 px-8 py-3 font-medium text-green-200 ring-1 ring-green-500 transition-all duration-500 hover:bg-green-500"
 					on:click={async () => {
-						if (name && email && nameRegex.test(name) && emailRegex.test(email)) {
+						if (name && email && name.length < 256 && emailRegex.test(email)) {
 							try {
 								const result = await setDoc(doc(waitlistCollection, email), {
 									name,
