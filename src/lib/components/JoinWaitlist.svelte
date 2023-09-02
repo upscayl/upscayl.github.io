@@ -31,7 +31,7 @@
 				console.log('email', email);
 				console.log('nameRegex.test(name)', nameRegex.test(name));
 				console.log('emailRegex.test(email)', emailRegex.test(email));
-				if (name && email && nameRegex.test(name) && emailRegex.test(email)) {
+				if (name && email && name.length < 256 && emailRegex.test(email)) {
 					try {
 						const result = await setDoc(doc(waitlistCollection, email), {
 							name,
