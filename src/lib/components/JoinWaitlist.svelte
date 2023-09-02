@@ -7,7 +7,7 @@
 	let email = '';
 
 	const nameRegex = /^[A-Za-z\s.'-]+$/;
-	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 </script>
 
 <div
@@ -39,7 +39,7 @@
 						});
 					} catch (error) {
 						alert(
-							'Error joining the waitlist. Have you already registered? If not, please try again later...'
+							`Thank you ${name}! It seems that your email has already been registered :D If that's not the case, please try again.`
 						);
 						return;
 					}
