@@ -11,10 +11,10 @@
 		<h5 class="text-lg font-semibold text-slate-100">Upscayl</h5>
 	</div>
 	<div class="hidden gap-10 text-sm text-slate-300 md:flex">
-		<a href="#cloud" class="flex items-center justify-center gap-2"
+		<a href="/#cloud" class="flex items-center justify-center gap-2"
 			><Icon icon="ph:cloud-fill" width={20} /> Cloud</a
 		>
-		<a href="#desktop" class="flex items-center justify-center gap-2"
+		<a href="/#desktop" class="flex items-center justify-center gap-2"
 			><Icon icon="ph:desktop-fill" width={20} /> Desktop</a
 		>
 		<a
@@ -28,7 +28,7 @@
 	</div>
 	<div class="flex items-center justify-center gap-6 text-sm text-slate-300">
 		<a
-			href="#download"
+			href="/#download"
 			class="flex items-center gap-2 rounded-full bg-slate-800 px-3 py-2 text-xs font-medium text-slate-300 ring-1 ring-slate-500 transition-all duration-500 hover:bg-slate-700/70 sm:text-sm"
 			><Icon icon="ph:download-fill" width={20} /> Download</a
 		>
