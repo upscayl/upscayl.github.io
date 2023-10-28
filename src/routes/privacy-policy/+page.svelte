@@ -1,4 +1,7 @@
-<div class="min-h-screen w-screen">
+<script lang="ts">
+</script>
+
+<main class="min-h-screen w-screen">
 	<section
 		class="relative z-10 flex flex-col items-center justify-center gap-4 px-4 pt-32 sm:px-0 md:pt-28"
 	>
@@ -42,4 +45,4 @@
 			<br /><br /> This Privacy Policy applies to the use of Upscayl.
 		</p>
 	</section>
-</div>
+</main>
