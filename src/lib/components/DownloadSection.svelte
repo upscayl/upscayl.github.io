@@ -71,7 +71,7 @@
 			id="download-links-list"
 		>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-linux.AppImage"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.AppImage"
 				target="_blank"
 				rel="noreferrer noopener">AppImage (Universal Portable)</a
 			>
@@ -84,17 +84,17 @@
 				>Snap Store</a
 			>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-linux.deb"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.deb"
 				target="_blank"
 				rel="noreferrer noopener">DEB (Debian/Ubuntu based)</a
 			>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-linux.rpm"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.rpm"
 				target="_blank"
 				rel="noreferrer noopener">RPM (Fedora based)</a
 			>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-linux.zip"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-linux.zip"
 				target="_blank"
 				rel="noreferrer noopener">ZIP (Universal Portable)</a
 			>
@@ -121,7 +121,7 @@
 			id="download-links-list"
 		>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-mac.dmg"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-mac.dmg"
 				target="_blank"
 				rel="noreferrer noopener">DMG</a
 			>
@@ -144,7 +144,7 @@
 			id="download-links-list"
 		>
 			<a
-				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-win.exe"
+				href="https://github.com/upscayl/upscayl/releases/download/v2.9.1/upscayl-2.9.1-win.exe"
 				target="_blank"
 				rel="noreferrer noopener">EXE Installer</a
 			>
