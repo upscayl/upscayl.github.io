@@ -121,11 +121,17 @@
 			id="download-links-list"
 		>
 			<a
+				href="https://apps.apple.com/us/app/upscayl/id6468265473"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				<img src="appstore.svg" alt="" class="w-full" />
+			</a>
+			<a
 				href="https://github.com/upscayl/upscayl/releases/download/v2.8.6/upscayl-2.8.6-mac.dmg"
 				target="_blank"
 				rel="noreferrer noopener">DMG</a
 			>
-			<a href="#" target="_blank" rel="noreferrer noopener">App Store (Coming Soon...)</a>
 		</div>
 	</div>
 </Modal>
