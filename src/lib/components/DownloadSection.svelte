@@ -154,7 +154,7 @@
 				target="_blank"
 				rel="noreferrer noopener">EXE Installer</a
 			>
-			<a href="#" target="_blank" rel="noreferrer noopener">Microsoft Store (Coming Soon...)</a>
+			<!-- <a href="#" target="_blank" rel="noreferrer noopener">Microsoft Store (Coming Soon...)</a>	 -->
 		</div>
 	</div>
 </Modal>
