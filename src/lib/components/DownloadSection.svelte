@@ -55,7 +55,7 @@
 	</div>
 </div>
 
-<JoinWaitlist />
+<!-- <JoinWaitlist /> -->
 
 <Modal bind:showModal={showLinuxModal}>
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -161,7 +161,7 @@
 
 <Modal bind:showModal={showCloudModal}>
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<JoinWaitlist />
+	<!-- <JoinWaitlist /> -->
 </Modal>
 
 <style>

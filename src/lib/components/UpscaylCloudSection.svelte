@@ -8,7 +8,8 @@
 	let email = '';
 
 	const nameRegex = /^[A-Za-z\s.'-]+$/;
-	const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+	const emailRegex =
+		/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 </script>
 
 <section
@@ -41,6 +42,12 @@
 			class="flex flex-col gap-8 rounded-3xl bg-gradient-to-t from-slate-800 to-transparent px-4 py-20 sm:px-36"
 			id="join-beta"
 		>
+			<p
+				class="max-w-md rounded-lg bg-slate-600/40 p-4 text-center text-sm font-light leading-tight text-slate-300"
+			>
+				Thank you for the overwhelming response! <br /> We'll be sending out emails to chosen waitlist
+				members soon!
+			</p>
 			<h3 class="text-center text-3xl font-medium text-slate-300">
 				Join the beta waitlist for <u class="text-slate-100">free</u>
 			</h3>
