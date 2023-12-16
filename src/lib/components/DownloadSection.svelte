@@ -15,7 +15,7 @@
 <div class="flex flex-col gap-20 px-4 text-slate-300 md:px-24" id="download">
 	<div class="flex w-fit flex-col gap-2">
 		<h1 class="text-4xl font-semibold text-slate-200">Download Upscayl</h1>
-		<p class="text-lg font-semibold text-slate-400">v2.9.5</p>
+		<p class="text-lg font-semibold text-slate-400">v{UPSCAYL_VERSION}</p>
 	</div>
 
 	<div
