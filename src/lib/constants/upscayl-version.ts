@@ -1,1 +1,1 @@
-export const UPSCAYL_VERSION = '2.9.6';
+export const UPSCAYL_VERSION = 'v2.9.7';
