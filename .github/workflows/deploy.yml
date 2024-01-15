@@ -30,7 +30,7 @@ jobs:
       - name: Get latest release version
         id: get-version
         run: |
-          latest_version=$(curl -s https://api.github.com/repos/upscayl/upscayl/releases/latest | jq -r .tag_name)
+          latest_version=$(curl -s https://api.github.com/repos/upscayl/upscayl/releases/latest | jq -r .name)
           echo "Latest version is $latest_version"
           echo "::set-output name=version::$latest_version"
 
