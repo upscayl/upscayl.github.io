@@ -1,8 +1,6 @@
 name: Update Upscayl Version
 
-on:
-  release:
-    workflow_dispatch
+on: workflow_dispatch
 jobs:
   update-version:
     runs-on: ubuntu-latest
