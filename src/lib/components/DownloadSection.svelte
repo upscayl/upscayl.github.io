@@ -158,6 +158,11 @@
 				target="_blank"
 				rel="noreferrer noopener">EXE Installer</a
 			>
+			<a
+				href={`https://github.com/upscayl/upscayl/releases/download/v${UPSCAYL_VERSION}/upscayl-${UPSCAYL_VERSION}-win.zip`}
+				target="_blank"
+				rel="noreferrer noopener">Portable ZIP</a
+			>
 			<!-- <a href="#" target="_blank" rel="noreferrer noopener">Microsoft Store (Coming Soon...)</a>	 -->
 		</div>
 	</div>
