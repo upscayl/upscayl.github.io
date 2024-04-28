@@ -45,7 +45,7 @@
 		>
 			<Icon icon="ph:windows-logo" width="5rem" />
 			<h5 class="text-xl font-medium">Windows</h5>
-			<p class="text-sm text-slate-400">Windows 8 and above</p>
+			<p class="text-sm text-slate-400">Windows 10 and above</p>
 		</button>
 
 		<button
