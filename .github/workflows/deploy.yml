@@ -1,85 +1,85 @@
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: 'main'
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: 'main'
+#   workflow_dispatch:
 
-jobs:
-  build_site:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+# jobs:
+#   build_site:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v2
-      #   with:
-      #     version: 8
+#       # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+#       # - name: Install pnpm
+#       #   uses: pnpm/action-setup@v2
+#       #   with:
+#       #     version: 8
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
+#       - name: Install Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
+#           cache: npm
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Install dependencies
+#         run: npm install
 
-      - name: Get latest release version
-        id: get-version
-        run: |
-          latest_version=$(curl -s https://api.github.com/repos/upscayl/upscayl/releases/latest | jq -r .name)
-          echo "Latest version is $latest_version"
-          echo "::set-output name=version::$latest_version"
+#       - name: Get latest release version
+#         id: get-version
+#         run: |
+#           latest_version=$(curl -s https://api.github.com/repos/upscayl/upscayl/releases/latest | jq -r .name)
+#           echo "Latest version is $latest_version"
+#           echo "::set-output name=version::$latest_version"
 
-      - name: Update version in file
-        run: echo "export const UPSCAYL_VERSION = '$(echo ${{ steps.get-version.outputs.version }})';" > src/lib/constants/upscayl-version.ts
+#       - name: Update version in file
+#         run: echo "export const UPSCAYL_VERSION = '$(echo ${{ steps.get-version.outputs.version }})';" > src/lib/constants/upscayl-version.ts
 
-      - name: Commit changes
-        run: |
-          if [[ "$(echo "${{ steps.get-version.outputs.version }}")" != "$(cat src/lib/constants/upscayl-version.ts | grep -oP "(?<=UPSCAYL_VERSION = ')(.*)(?=';)")" ]]; then
-            git config user.name "${{ github.actor }}"
-            git config user.email "${{ github.actor }}@users.noreply.github.com"
-            git add src/lib/constants/upscayl-version.ts
-            git commit -m "Update Upscayl version to ${{ steps.get-version.outputs.version }}"
-          fi
-          
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          branch: ${{ github.ref }}
-          force: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Commit changes
+#         run: |
+#           if [[ "$(echo "${{ steps.get-version.outputs.version }}")" != "$(cat src/lib/constants/upscayl-version.ts | grep -oP "(?<=UPSCAYL_VERSION = ')(.*)(?=';)")" ]]; then
+#             git config user.name "${{ github.actor }}"
+#             git config user.email "${{ github.actor }}@users.noreply.github.com"
+#             git add src/lib/constants/upscayl-version.ts
+#             git commit -m "Update Upscayl version to ${{ steps.get-version.outputs.version }}"
+#           fi
 
-      - name: build
-        env:
-          BASE_PATH: ''
-        run: |
-          npm run build
-          touch build/.nojekyll
+#       - name: Push changes
+#         uses: ad-m/github-push-action@v0.8.0
+#         with:
+#           branch: ${{ github.ref }}
+#           force: true
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+#       - name: build
+#         env:
+#           BASE_PATH: ''
+#         run: |
+#           npm run build
+#           touch build/.nojekyll
 
-  deploy:
-    needs: build_site
-    runs-on: ubuntu-latest
+#       - name: Upload Artifacts
+#         uses: actions/upload-pages-artifact@v1
+#         with:
+#           # this should match the `pages` option in your adapter-static options
+#           path: 'build/'
 
-    permissions:
-      pages: write
-      id-token: write
+#   deploy:
+#     needs: build_site
+#     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+#     permissions:
+#       pages: write
+#       id-token: write
 
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+
+#     steps:
+#       - name: Deploy
+#         id: deployment
+#         uses: actions/deploy-pages@v1
