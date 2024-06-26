@@ -3,46 +3,113 @@
 
 <main class="min-h-screen w-screen">
 	<section
-		class="relative z-10 flex flex-col items-center justify-center gap-4 px-4 pt-32 sm:px-0 md:pt-28"
+		class="prose prose-invert lg:prose-xl relative z-10 mx-auto flex max-w-4xl flex-col items-center justify-center gap-4 px-4 pt-32 sm:px-0 md:pt-28"
 	>
-		<h1 class="text-4xl font-medium text-white">Privacy Policy</h1>
+		<div class="text-center">
+			<h1 class="text-center">Privacy Policy for Upscayl Cloud</h1>
+			<p>Last updated: June 01, 2024</p>
+		</div>
 
-		<p class="max-w-2xl">
-			<b>Privacy Policy Last updated:</b> <u>27th October 2023</u>. <br /><br />
-			Your privacy is important to us. It is Upscayl's policy to respect your privacy regarding any information
-			we may collect during the use of our app, Upscayl. <br /><br />
+		<div class="container">
+			<p>
+				Welcome to Upscayl! We are committed to protecting your privacy and ensuring that your
+				personal information is handled in a safe and responsible manner. This Privacy Policy
+				explains how we collect, use, and safeguard your information when you use our website and
+				services.
+			</p>
 
-			<b>Information Collection and Use:</b><br />
-			Our app does not collect any personal information or data from users. We do not require any logins
-			or personal information for the use of our application.
+			<h2>Information We Collect</h2>
 
-			<br /><br />
+			<h3>Personal Information</h3>
+			<p>
+				We only collect the minimum amount of personal information necessary to provide our
+				services:
+			</p>
+			<ul>
+				<li><strong>Name</strong></li>
+				<li><strong>Email Address</strong></li>
+				<li><strong>Profile Picture</strong></li>
+			</ul>
+			<p>
+				This information is collected when you sign up using Google or GitHub login and is used to
+				create your account.
+			</p>
 
-			<b>GitHub Integration:</b><br /> Our application may use the internet to access GitHub for the
-			sole purpose of checking for new releases and updates. This interaction with GitHub is limited
-			to checking for new versions of the application and does not involve the collection, storage,
-			or processing of any personal information from the user.
-			<br /><br />
+			<h2>How We Use Your Information</h2>
+			<p>We use the collected information for the following purposes:</p>
+			<ul>
+				<li>
+					<strong>Providing Services</strong>: To allow you to use our image upscaling services.
+				</li>
+				<li>
+					<strong>Account Management</strong>: To manage your account, including authentication and
+					customer support.
+				</li>
+			</ul>
 
-			<b>External Links:</b> <br /> Our app may contain links to external sites, particularly to the
-			GitHub repository for the application. Please note that we have no control over the content
-			and practices of these sites, and we cannot accept responsibility or liability for their
-			respective privacy policies.
-			<br /><br />
+			<h2>Data Storage and Security</h2>
 
-			<b>Data Security:</b><br />
-			We take reasonable measures to secure any data or information within our control, including protecting
-			it against unauthorized access, disclosure, or destruction.
-			<br /><br />
+			<h3>Firebase Privacy and Security</h3>
+			<p>
+				You can read more about Firebase's privacy and security practices here: <a
+					href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a
+				>.
+			</p>
 
-			<b>Changes to This Privacy Policy: </b><br />
-			We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically
-			for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
-			These changes are effective immediately after they are posted on this page. <br /><br />
+			<h2>Third-Party Services</h2>
 
-			<b>Contact Us:</b><br /> If you have any questions or suggestions about our Privacy Policy, do
-			not hesitate to contact us.
-			<br /><br /> This Privacy Policy applies to the use of Upscayl.
-		</p>
+			<h3>Payment Processing</h3>
+			<p>
+				Payments are handled by a third-party service. We do not store any payment information on
+				our servers. Please refer to the payment processor's privacy policy for details on how your
+				payment information is handled.
+			</p>
+
+			<h2>Data Retention</h2>
+			<ul>
+				<li>
+					<strong>Personal Information</strong>: Stored as long as your account is active or as
+					needed to provide you with services.
+				</li>
+				<li><strong>Original Images</strong>: Deleted after 24 hours.</li>
+				<li><strong>Upscaled Images</strong>: Deleted after 6 months.</li>
+			</ul>
+
+			<h2>Your Rights</h2>
+			<p>You have the right to:</p>
+			<ul>
+				<li>Access, update, or delete your personal information.</li>
+				<li>
+					Withdraw your consent at any time, where consent is the legal basis for processing your
+					information.
+				</li>
+				<li>
+					Lodge a complaint with a data protection authority if you believe your privacy rights have
+					been violated.
+				</li>
+			</ul>
+
+			<h2>No Tracking</h2>
+			<p>We do not use tracking technologies to track you across the web.</p>
+
+			<h2>Changes to This Privacy Policy</h2>
+			<p>
+				We may update this Privacy Policy from time to time. We will notify you of any changes by
+				posting the new Privacy Policy on our website. You are advised to review this Privacy Policy
+				periodically for any changes.
+			</p>
+
+			<h2>Contact Us</h2>
+			<p>If you have any questions about this Privacy Policy, please contact us at:</p>
+			<p>
+				<strong>Upscayl</strong><br />
+				Email: <a href="mailto:upscayl+privacy@gmail.com">upscayl+privacy@gmail.com</a>
+			</p>
+
+			<p>
+				Thank you for trusting Upscayl with your personal information. We are committed to ensuring
+				your privacy and safeguarding your data.
+			</p>
+		</div>
 	</section>
 </main>
