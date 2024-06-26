@@ -56,11 +56,11 @@
 				<div class="flex flex-col gap-4 break-all p-4 text-slate-300">
 					<b>Support</b>
 					<div class="flex flex-col gap-2 text-sm">
+						<a href="mailto:support@upscayl.org"
+							>Business Inquiries: <span class="text-slate-400">support@upscayl.org</span></a
+						>
 						<a href="https://github.com/upscayl/upscayl/#-faq" target="_blank" rel="noreferrer"
 							>FAQ</a
-						>
-						<a href="mailto:nayam.emikx@aleeas.com"
-							>Email: <span class="text-slate-400">nayam.emikx@aleeas.com</span></a
 						>
 						<a href="https://github.com/orgs/upscayl/discussions" target="_blank" rel="noreferrer"
 							>GitHub Discussion</a
